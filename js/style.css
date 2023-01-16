@@ -1,0 +1,397 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 10px;
+    background-color: rgb(114, 134, 247);
+    color: white;
+    margin-bottom: 56px;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.menu li:hover{
+    border-color: rgb(17, 50, 240);
+}
+
+.submenu{
+    display: none;
+    border: 1px solid rgb(17, 50, 240);
+    background-color:  rgb(114, 134, 247, 0.5);
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.submenu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.submenu li{
+    display: block;
+    padding: 8px;
+}
+
+.SobreALoja img{
+    max-width: 500px;
+    margin-right: 4px;
+}
+
+#carousel-imagens{
+    background-color: white;
+    max-width: 30%;
+}
+
+hr{
+    border: 0;
+    border-top: 2px solid rgb(114, 134, 247);
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.SobreALoja{
+    display: flex;
+    justify-content: space-between;
+}
+
+.SobreALoja h2{
+    margin-left: 30px;
+    color:  rgb(114, 134, 247);
+}
+
+.SobreALoja p{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.Produtc h2{
+    margin-top: 50px;
+    color: rgb(114, 134, 247);
+}
+
+.Produtc hr{
+    margin-left: -3px;
+    margin-bottom: 30px;
+}
+
+.Produto img{
+    max-width: 100%;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.45%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produtos h3{
+    text-transform: uppercase;
+}
+
+.produtos p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(114, 134, 247);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+footer{
+    background-color: rgb(114, 134, 247);
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 8px;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+}
+
+.conect img{
+    max-width: 25px;
+}
+
+.conect p{
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.conect li{
+    display: inline;
+    margin-right: 30px;
+}
+
+.conect{
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 767px){
+    .conteudo{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    header .container{
+        flex-direction: column;
+    }
+    header h1{
+        margin-left: -100px;
+    }
+    .botao-menu{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 8px;
+        margin-left: 250px;
+        margin-top: -40px;
+    }
+    .botao-menu button{
+        padding: 8px;
+    }
+    .SobreALoja{
+        display: block;
+    }
+    #carousel-imagens{
+        background-color: white;
+        max-width: 100%;
+    }
+    .SobreALoja h2{
+        margin-left: 0px;
+        margin-top: 30px;
+        color:  rgb(114, 134, 247);
+    }
+    hr{
+        border: 0;
+        border-top: 2px solid rgb(114, 134, 247);
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .SobreALoja p{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .produtos{
+        display: block;
+        grid-template-columns: repeat(4, 24.45%);
+        column-gap: 1%;
+        row-gap: 5%;
+        margin-left: 30px;
+    }
+    button {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        border: none;
+        background-color: rgb(114, 134, 247);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        margin-left: -20px;
+    }
+    .menu > li{
+        clear: both;
+    }
+    .submenu{
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+    .submenu a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    footer{
+        font-size: 10px;
+    }
+    footer .container{
+        display: flex;
+        align-items: center;
+    }
+    .conect img{
+        max-width: 15px;
+    }
+    .conect p{
+        margin-right: 10px;
+    }
+    .conect li{
+        display: inline;
+        margin-right: 10px;
+    }
+    .conect{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .conteudo{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .botao-menu{
+        display: none;
+    }
+    .SobreALoja img{
+        max-width: 800px;
+        margin-right: 4px;
+    }
+    
+    #carousel-imagens{
+        background-color: white;
+        max-width: 100%;
+    }
+    hr{
+        border: 0;
+        border-top: 2px solid rgb(114, 134, 247);
+        margin-left: -30px;
+        margin-top: 15px;
+    }
+    .SobreALoja{
+        display: block;
+        justify-content: space-between;
+    }
+    .SobreALoja h2{
+        margin-top: 30px;
+        margin-left: -30px;
+        color:  rgb(114, 134, 247);
+    }
+    .SobreALoja p{
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    .Produtc h2{
+        margin-top: 50px;
+        margin-left: 10px;
+        color: rgb(114, 134, 247);
+    }
+    .Produtc hr{
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .Produto img{
+        max-width: 100%;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49.9%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+    .produtos h3{
+        text-transform: uppercase;
+    }
+    .produtos p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .price{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    button {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        border: none;
+        background-color: rgb(114, 134, 247);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+    footer{
+        background-color: rgb(114, 134, 247);
+        color: white;
+        margin-top: 235px;
+        margin-bottom: 0;
+        padding: 8px;
+    }
+    footer .container{
+        display: flex;
+        align-items: center;
+    }
+    .conect img{
+        max-width: 25px;
+    }
+    .conect p{
+        margin-left: 1px;
+        margin-right: 3px;
+    }
+    .conect li{
+        display: inline;
+        margin-right: 10px;
+    }
+    .conect{
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .botao-menu{
+        display: none;
+    }
+}
